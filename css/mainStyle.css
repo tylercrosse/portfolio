@@ -36,26 +36,42 @@ hr {
 /* NAV
 ================================================= */
 
-.mainNav {
-  position: fixed;
-  z-index: 10;
-  top: 30%;
-  right: 15px;
+.navbar-absolute {
+  bottom: 0;
+  position: absolute;
   background-color: #fff;
-  background-color: rgba(255, 255, 255, .7);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-fixed {
+  top: 0;
+  position: fixed;
+  /*background-color: red;*/
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+.mainNav {
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+  z-index: 10;
+  width: 100%;
+  overflow: hidden;
 }
 .mainNav ul {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 .mainNav li {
+  display: inline-block;
   line-height: 40px;
   width: 80px;
   height: 40px;
   text-align: center;
 }
 .mainNav li:hover {
-  background-color: #aeb7b6;
+  background-color: rgb(235, 235, 235);
+  box-shadow:inset 0px -2px 0px 0px red;
 }
 .mainNav a {
   display: block;
@@ -150,6 +166,7 @@ hr {
   max-width: 400px;
   height: auto;
   border: 10px solid rgb(235, 235, 235);
+  border-radius: 5px;
 }
 .side {
   float: left;
