@@ -14,7 +14,7 @@ $(document).ready(function() {
   getNavHrefs();
 
   $(window).scroll(function () {
-    var winPos = $(window).scrollTop(); // get current vertical position
+    var scrollPos = $(window).scrollTop(); // get current vertical position
     var winHeight = $(window).height(); // get window height
     var docHeight = $(document).height(); // get doc height for last child
 
@@ -40,9 +40,9 @@ $(document).ready(function() {
       var activeNav = function() {
         for (var i=0; i < aArray.length; i++) {
           var secID = aArray[i]; // select nav href i
-          var secPos = $(secID).offset().top; // get offset of that section from top of page
+          var secPos = $(secID).offset().top - 40; // get offset of that section from top of page
           var secHeight = $(secID).height(); // get height of that section
-          if (winPos >= secPos && winPos < (secPos + secHeight)) { //if looking at that section
+          if (scrollPos >= secPos && scrollPos < (secPos + secHeight)) { //if looking at that section
             $("a[href='" + secID + "']").addClass("nav-active");
           } else {
             $("a[href='" + secID + "']").removeClass("nav-active");
@@ -50,7 +50,7 @@ $(document).ready(function() {
         }
 
         // if at the bottom of the page make the last nav li active & others inactive
-        if(winPos + winHeight == docHeight) {
+        if(scrollPos + winHeight == docHeight) {
           if (!$("mainNav li:last-child a").hasClass("nav-active")) {
             var navActiveCurrent = $(".nav-active").attr("href");
             $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
@@ -59,6 +59,8 @@ $(document).ready(function() {
         }
       };
       activeNav();
+
+
 
     }, 10); //delay of 10 ms
   });

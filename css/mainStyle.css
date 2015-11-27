@@ -33,6 +33,22 @@ hr {
   margin: 0 100px;
 }
 
+.hiddenId {
+  position: absolute;
+  top: -40px; /* height of navbar */
+}
+
+@media screen and (max-width: 750px) {
+  h2 {
+    font-size: 1.5em;
+    padding: 8px;
+  }
+  h3 {
+    font-size: 1em;
+    padding: 8px;
+  }
+}
+
 /* NAV
 ================================================= */
 
@@ -63,7 +79,8 @@ hr {
   overflow: hidden;
 }
 .mainNav ul {
-  margin: 0 auto;
+  text-align: center;
+  margin: 0;
   padding: 0;
 }
 .mainNav li {
@@ -122,15 +139,26 @@ hr {
   background-color: rgba(215, 206, 197, .95);
 }
 .profilePic {
-  float: right;
+  float: left;
+  display: inline-block;
+  clear: both;
   margin: 30px;
   border: 10px solid white;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 750px) {
+  .profilePic {
+    height: 60px;
+    width: auto;
+  }
 }
 
 /* SKILLS
 ================================================= */
 
 .skills {
+  text-align: center;
   position: relative;
   height: 50vh;
   /*background-color: #b8b8b8;*/
@@ -142,83 +170,18 @@ hr {
   background-color: rgba(164, 164, 172, .98);
 }
 
-.skills table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.skills td,
-.skills th {
-  padding: 2px;
-  text-align: left;
-}
-
-.skills th {
-  font-weight: bold;
-  padding-bottom: 8px;
-}
-
-@media
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
-
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr {
-		display: block;
-	}
-
-	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr {
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-
-	tr { border: 1px solid #ccc; }
-
-	td {
-		/* Behave  like a "row" */
-		border: none;
-		border-bottom: 1px solid #eee;
-		position: relative;
-		padding-left: 50%;
-	}
-
-	td:before {
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%;
-		padding-right: 10px;
-		white-space: nowrap;
-	}
-
-	/*
-	Label the data
-	*/
-	td:nth-of-type(1):before { content: "First Name"; }
-	td:nth-of-type(2):before { content: "Last Name"; }
-	td:nth-of-type(3):before { content: "Job Title"; }
-	td:nth-of-type(4):before { content: "Favorite Color"; }
-	td:nth-of-type(5):before { content: "Wars of Trek?"; }
-	td:nth-of-type(6):before { content: "Porn Name"; }
-}
-
 /* PROJECTS
 ================================================= */
 
 .projects {
   position: relative;
+  overflow: hidden;
   /*background-color: rgb(215, 206, 197);*/
   /*background-color: rgb(235, 235, 235);*/
-  overflow: hidden;
   /*background-color: #fff;*/
-  background-color: #42414a;
+  background-color: rgb(66, 65, 74);
   color: rgb(235, 235, 235);
 }
-
 .projects hr {
   margin-bottom: 8em;
 }
@@ -231,6 +194,9 @@ only screen and (max-width: 760px),
   clear: both;
   content: '';
 }
+.projectText {
+  padding: 3em;
+}
 .project img {
   max-width: 400px;
   height: auto;
@@ -239,11 +205,10 @@ only screen and (max-width: 760px),
 }
 .side {
   float: left;
-  overflow: hidden;
-  width: 40%;
+  /*overflow: hidden;*/
+  width: 50%;
   min-height: 12em;
   margin: 0;
-  padding: 3em 4%;
 }
 .side::before, .side::after {
   display: table;
@@ -263,13 +228,46 @@ only screen and (max-width: 760px),
   float: right;
 }
 
+@media screen and (max-width: 970px) {
+	.project h3 {
+		margin: 0;
+	}
+
+	.side img {
+		max-width: 80%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+  .projectText {
+    padding: 20px 2em;
+  }
+  .project h3,
+  .project p {
+		text-align: center;
+    margin-bottom: 0;
+    padding-top: 0;
+	}
+	.side {
+		float: none;
+		width: 100%;
+    min-height: 4em;
+	}
+	.side img {
+    box-sizing: border-box;
+		max-width: 90%;
+    margin: 0 5%;
+	}
+}
+
 /* FOOTER
 ================================================= */
 
 footer {
   position: relative;
   height: 120px;
-  background-color: rgb(100, 100, 100);
+  background-color: rgb(47, 47, 50);
+  color: rgb(235, 235, 235);
 }
 
 .contactLinks {
@@ -288,14 +286,15 @@ footer {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  background-color: rgb(47, 47, 50);
+  background-color: rgb(100, 100, 100);
   margin: 20px;
+  border-radius: 5px;
 }
 
 .contactLinks a {
+  color: rgb(235, 235, 235);
   display: block;
   text-decoration: none;
-  color: rgb(235, 235, 235);
 }
 
 .contact p {
