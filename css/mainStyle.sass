@@ -3,6 +3,7 @@
 
 $navHighlight: red
 $easeInOutQuart: cubic-bezier(0.77, 0, 0.175, 1)
+$mqOne: 750px
 
 body
   font-family: 'Raleway', sans-serif
@@ -37,7 +38,7 @@ hr
   position: absolute
   top: -40px
 
-@media screen and (max-width: 750px)
+@media screen and (max-width: $mqOne)
   h2
     font-size: 2.2em
     padding: 8px
@@ -49,8 +50,6 @@ hr
 
 // /* NAV
 //  *=================================================
-
-@import
 
 .navbar-absolute
   bottom: 0
@@ -81,7 +80,7 @@ hr
   li
     display: inline-block
     line-height: 40px
-    width: 80px
+    width: 100px
     height: 40px
     text-align: center
     &:hover
@@ -91,6 +90,14 @@ hr
     display: block
     text-decoration: none
     color: black
+    font-size: 1.2em
+
+@media screen and (max-width: $mqOne)
+  .mainNav
+    li
+      width: 70px
+    a
+      font-size: 1em
 
 // /* SPLASH
 //  *=================================================
@@ -135,7 +142,7 @@ hr
   border: 10px solid white
   border-radius: 5px
 
-@media screen and (max-width: 750px)
+@media screen and (max-width: $mqOne)
   .profilePic
     height: 100px
     width: auto
@@ -213,7 +220,7 @@ hr
   .side img
     max-width: 80%
 
-@media screen and (max-width: 750px)
+@media screen and (max-width: $mqOne)
   .projectText
     padding: 20px 2em
   .project

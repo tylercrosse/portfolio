@@ -42,7 +42,7 @@ $(document).ready(function() {
       var activeNav = function() {
         for (var i=0; i < aArray.length; i++) {
           var secID = aArray[i]; // select nav href i
-          var secPos = $(secID).offset().top - 40; // get offset of that section from top of page - nav-height
+          var secPos = $(secID).offset().top - 41; // get offset of that section from top of page - nav-height
           var secHeight = $(secID).height() + 120; // get height of that section + padding-bottom
           if (scrollPos >= secPos && scrollPos < (secPos + secHeight)) { //if looking at that section
             $("a[href='" + secID + "']").addClass("nav-active");
