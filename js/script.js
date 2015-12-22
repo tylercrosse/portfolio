@@ -40,8 +40,8 @@ $(document).ready(function() {
       var activeNav = function() {
         for (var i=0; i < aArray.length; i++) {
           var secID = aArray[i]; // select nav href i
-          var secPos = $(secID).offset().top - 40; // get offset of that section from top of page
-          var secHeight = $(secID).height(); // get height of that section
+          var secPos = $(secID).offset().top - 40; // get offset of that section from top of page - nav-height
+          var secHeight = $(secID).height() + 120; // get height of that section + padding-bottom
           if (scrollPos >= secPos && scrollPos < (secPos + secHeight)) { //if looking at that section
             $("a[href='" + secID + "']").addClass("nav-active");
           } else {
@@ -63,6 +63,22 @@ $(document).ready(function() {
 
 
     }, 10); //delay of 10 ms
+  });
+
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top - 40 // minus nav-height
+          }, 500);
+          return false;
+        }
+      }
+    });
   });
 
 });
