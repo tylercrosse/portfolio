@@ -20,10 +20,12 @@ $(document).ready(function() {
 
     // starts new timeout if new scroll triggered before first timeout finishes
     if (timer) {
+      console.log("Timer Restarated");
       window.clearTimeout(timer);
     }
 
     timer = window.setTimeout(function() {
+      console.log("Timer");
 
       var scrollNav = function() {
         if ($(window).scrollTop() > (winHeight - 40)) {
@@ -60,9 +62,7 @@ $(document).ready(function() {
       };
       activeNav();
 
-
-
-    }, 10); //delay of 10 ms
+    }, 15); //delay of 10 ms
   });
 
   $(function() {
