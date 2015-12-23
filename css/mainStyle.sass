@@ -2,6 +2,7 @@
 //  *=================================================
 
 $navHighlight: red
+$splashColor: rgb(235, 235, 235)
 $easeInOutQuart: cubic-bezier(0.77, 0, 0.175, 1)
 $mqOne: 750px
 
@@ -14,7 +15,6 @@ h1
 
 h2
   font-size: 3em
-  margin: 0 auto
   padding: 20px
 
 h3
@@ -34,10 +34,6 @@ hr
 .subSection
   margin: 0 100px
 
-.hiddenId
-  position: absolute
-  top: -40px
-
 @media screen and (max-width: $mqOne)
   h2
     font-size: 2.2em
@@ -47,6 +43,9 @@ hr
     padding: 8px
   p
     font-size: 1em
+
+  .subSection
+    margin: 0 5%
 
 // /* NAV
 //  *=================================================
@@ -174,7 +173,7 @@ hr
   overflow: hidden
   padding: 40px 0 80px 0
   background-color: rgb(66, 65, 74)
-  color: rgb(235, 235, 235)
+  color: $splashColor
   hr
     margin-bottom: 8em
 
@@ -188,7 +187,7 @@ hr
   img
     max-width: 400px
     height: auto
-    border: 10px solid rgb(235, 235, 235)
+    border: 10px solid $splashColor
     border-radius: 5px
 
 .projectText
@@ -242,19 +241,19 @@ hr
 
 footer
   position: relative
-  height: 200px
   padding-top: 40px
   background-color: rgb(47, 47, 50)
-  color: rgb(235, 235, 235)
+  color: $splashColor
+  padding-bottom: 100px
 
 .contactLinks
   position: relative
   list-style: none
-  margin: 0
   display: inline-block
   left: 50%
   transform: translateX(-50%)
   padding: 0
+  margin: 60px 0
   li
     display: inline-block
     width: 80px
@@ -265,10 +264,10 @@ footer
     margin: 20px
     border-radius: 5px
   a
-    color: rgb(235, 235, 235)
+    color: $splashColor
     display: block
     text-decoration: none
 
 .contact p
-  margin: 0
+  margin: 100px 0
   text-align: center
