@@ -185,6 +185,10 @@ hr {
   font-weight: bold;
 }
 
+.skills .sectionHeading {
+  clear: both;
+}
+
 .projects {
   position: relative;
   overflow: hidden;
