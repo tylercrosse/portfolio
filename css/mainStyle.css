@@ -31,7 +31,7 @@ hr {
 }
 
 .subSection {
-  margin: 0 100px;
+  margin: 0 10vw;
 }
 
 @media screen and (max-width: 750px) {
@@ -149,6 +149,10 @@ hr {
   transition: all 0.2s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+.profile .subHeading {
+  text-align: left;
+}
+
 .profilePic {
   float: left;
   display: inline-block;
@@ -158,6 +162,9 @@ hr {
 }
 
 @media screen and (max-width: 750px) {
+  .profile .subHeading {
+    text-align: center;
+  }
   .profilePic {
     height: 100px;
     width: auto;

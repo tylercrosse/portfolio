@@ -79,4 +79,19 @@ $(document).ready(function() {
     });
   });
 
+  $( '#splash' ).mousemove( function( e ) {
+    $( '.intro' ).parallax( 10, e );
+  });
+
+  // jquery mouse parallax plugin https://github.com/giuseppesalvo/jquery-mouse-parallax
+  $.fn.parallax = function ( resistance, mouse )
+  {
+    console.log("something");
+    $el = $( this );
+    TweenLite.to( $el, 0.2,
+      {
+        x : -(( mouse.clientX - (window.innerWidth/2) ) / resistance ),
+        y : -(( mouse.clientY - (window.innerHeight/2) ) / resistance )
+      });
+    };
 });
