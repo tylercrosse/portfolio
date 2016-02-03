@@ -80,13 +80,13 @@ $(document).ready(function() {
   });
 
   $( '#splash' ).mousemove( function( e ) {
+    $( '.splashHero').parallax( -20, e );
     $( '.intro' ).parallax( 10, e );
   });
 
   // jquery mouse parallax plugin https://github.com/giuseppesalvo/jquery-mouse-parallax
   $.fn.parallax = function ( resistance, mouse )
   {
-    console.log("something");
     $el = $( this );
     TweenLite.to( $el, 0.2,
       {
