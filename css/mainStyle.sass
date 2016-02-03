@@ -3,8 +3,15 @@
 
 $navHighlight: red
 $splashColor: rgb(235, 235, 235)
+$transWhite: rgba(255, 255, 255, 0.7)
 $easeInOutQuart: cubic-bezier(0.77, 0, 0.175, 1)
-$mqOne: 750px
+$mgLaptop: 1024px
+$mqTablet: 768px
+$mqPhoneL: 425px
+$mqPhoneS: 320px
+
+*
+  box-sizing: border-box
 
 body
   font-family: 'Raleway', sans-serif
@@ -34,7 +41,10 @@ hr
 .subSection
   margin: 0 10vw
 
-@media screen and (max-width: $mqOne)
+.contentContainer
+  margin: 0 10%
+
+@media screen and (max-width: $mqTablet)
   h2
     font-size: 2.2em
     padding: 8px
@@ -43,9 +53,10 @@ hr
     padding: 8px
   p
     font-size: 1em
-
   .subSection
     margin: 0 5%
+  .contentContainer
+    margin: 0
 
 // /* NAV
 //  *=================================================
@@ -91,7 +102,7 @@ hr
     color: black
     font-size: 1.2em
 
-@media screen and (max-width: $mqOne)
+@media screen and (max-width: $mqTablet)
   .mainNav
     li
       width: 70px
@@ -109,9 +120,6 @@ hr
   z-index: -1
   width: 100%
   height: 100vh
-  // background-image: url(../images/KV_WALLPAPER_2.jpg)
-  // background-position: center
-  // background-size: cover
   transform: scale(1.1)
   animation: fade-in 1s $easeInOutQuart
 
@@ -155,7 +163,7 @@ hr
   border-radius: 5px
   height: 160px
 
-@media screen and (max-width: $mqOne)
+@media screen and (max-width: $mqTablet)
   .profile
     .subHeading
       text-align: center
@@ -175,14 +183,14 @@ hr
   padding: 40px 0 80px 0
   background-color: rgb(164, 164, 172)
   background-color: rgba(164, 164, 172, 0.98)
-  .skillListContainer
+  .subSection
     display: flex
     justify-content: center
   p
     margin-top: 16px
   .skillList
     display: inline-block
-    margin: 0 5%
+    margin: 0 8%
   ul
     list-style: none
     display: inline
@@ -195,7 +203,7 @@ hr
     text-align: center
     clear: both
 
-@media screen and (max-width: $mqOne)
+@media screen and (max-width: $mqTablet)
   .skillList
     li
       font-size: 1em
@@ -221,14 +229,54 @@ hr
     display: table
     clear: both
     content: ''
-  img
-    max-width: 400px
+  figure
+    text-align: center
+    overflow: hidden
+    max-width: 40vw
     height: auto
     border: 10px solid $splashColor
     border-radius: 5px
+    p
+    	margin: 1em 0 0
+    	padding: 1em
+    	border: 1px solid #fff
+      transition: all 0.35s $easeInOutQuart
+    	transform: translate3d(0,20px,0) scale(1.1)
+      opacity: 0
+    img
+    	position: relative
+    	display: block
+    	min-height: 100%
+    	max-width: 100%
+      transition: all 0.35s $easeInOutQuart
+      opacity: 1
+    figcaption
+    	padding: 1em
+    	color: #fff
+    figcaption,
+    figcaption > a
+    	position: absolute
+    	top: 0
+    	left: 0
+    	width: 100%
+    	height: 100%
+    figcaption > a
+    	z-index: 1000
+    	text-indent: 200%
+    	white-space: nowrap
+    	font-size: 0
+    	opacity: 0
+    &:hover
+      p
+        transform: translate3d(0,0,0) scale(1)
+        opacity: 1
+      img
+        opacity: 0.4
 
 .projectText
   padding: 3em
+  h3
+    margin: 0
 
 .side
   float: left
@@ -242,33 +290,29 @@ hr
 
 .sideRight
   text-align: left
-  img
+  figure
     float: left
 
 .sideLeft
   text-align: right
-  img
+  figure
     float: right
 
-@media screen and (max-width: 970px)
-  .project h3
-    margin: 0
-  .side img
-    max-width: 80%
-
-@media screen and (max-width: $mqOne)
+@media screen and (max-width: $mqTablet)
   .projectText
     padding: 20px 2em
   .project
+    display: block
     h3, p
       text-align: center
       margin-bottom: 0
       padding-top: 0
   .side
+    display: block
     float: none
     width: 100%
     min-height: 4em
-    img
+    figure
       box-sizing: border-box
       max-width: 90%
       margin: 0 5%
@@ -290,7 +334,6 @@ footer
   left: 50%
   transform: translateX(-50%)
   padding: 0
-  margin: 60px 0
   li
     display: inline-block
     width: 80px
