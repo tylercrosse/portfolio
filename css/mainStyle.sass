@@ -109,9 +109,20 @@ hr
   z-index: -1
   width: 100%
   height: 100vh
-  background-image: url(../images/KV_WALLPAPER_2.jpg)
-  background-position: center
-  background-size: cover
+  // background-image: url(../images/KV_WALLPAPER_2.jpg)
+  // background-position: center
+  // background-size: cover
+  transform: scale(1.1)
+  animation: fade-in 1s $easeInOutQuart
+
+  @keyframes fade-in
+    0%
+      opacity: 0
+      transform: scale(1.6)
+
+    100%
+      opacity: 1
+      transform: scale(1.1)
 
 .intro
   position: relative
@@ -142,6 +153,7 @@ hr
   margin: 20px 30px 200px 30px
   border: 10px solid white
   border-radius: 5px
+  height: 160px
 
 @media screen and (max-width: $mqOne)
   .profile
@@ -159,18 +171,36 @@ hr
 //  *=================================================
 
 .skills
-  text-align: center
   position: relative
   padding: 40px 0 80px 0
   background-color: rgb(164, 164, 172)
   background-color: rgba(164, 164, 172, 0.98)
+  .skillListContainer
+    display: flex
+    justify-content: center
   p
     margin-top: 16px
+  .skillList
+    display: inline-block
+    margin: 0 5%
+  ul
+    list-style: none
+    display: inline
+  li
+    font-size: 1.3em
   .category
     margin: 30px auto 0 auto
     font-weight: bold
   .sectionHeading
+    text-align: center
     clear: both
+
+@media screen and (max-width: $mqOne)
+  .skillList
+    li
+      font-size: 1em
+
+
 
 // /* PROJECTS
 //  *=================================================
