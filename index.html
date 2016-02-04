@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tyler Crosse</title>
-  <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+  <link rel='icon' href='favicon.ico' type='image/x-icon' />
   <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/mainStyle.min.css">
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/TweenMax.min.js"></script>
   <script src="js/script.js"></script>
   </script>
 </head>
+
 <body>
   <nav class="mainNav navbar-absolute">
     <ul>
@@ -34,21 +36,23 @@
   </section>
 
   <section id="profile" class="profile">
-    <h2 class="sectionHeading">Profile</h2>
-    <hr>
-    <div class="subSection">
-      <img class="profilePic" src="images/Head_Shot_BW.jpg" alt="" />
-      <h3 class="subHeading">About Me</h3>
-      <p> I love learning, and teaching what I already know. I’m a resourceful web developer excited by building pragmatic features that enrich and streamline user experience. When I'm not attending hackathons or teaching other community members how to code, I'm on a bike, a mountain, an airplane, or buried in a good book.</p>
-    </div>
+    <div class="contentContainer">
+      <h2 class="sectionHeading">Profile</h2>
+      <hr>
+      <div class="subSection">
+        <img class="profilePic" src="images/Head_Shot_BW.jpg" alt="" />
+        <h3 class="subHeading">About Me</h3>
+        <p> I love learning, and teaching what I already know. I’m a resourceful web developer excited by building pragmatic features that enrich and streamline user experience. When I'm not attending hackathons or teaching other community members how to
+          code, I'm on a bike, a mountain, an airplane, or buried in a good book.</p>
+      </div>
+    </div><!-- /contentContainer -->
   </section>
 
   <section id="skills" class="skills">
-    <h2 class="sectionHeading">Skills</h2>
-    <hr>
-    <div class="subSection">
-      <!-- <h3 class="subHeading">Languages, Fameworks, &amp; Databases</h3> -->
-      <div class="skillListContainer">
+    <div class="contentContainer">
+      <h2 class="sectionHeading">Skills</h2>
+      <hr>
+      <div class="subSection">
         <div class="skillList">
           <ul>
             <strong><li>Front End</li></strong>
@@ -92,47 +96,46 @@
           </ul>
         </div>
       </div>
-      <!-- <p class="category">Frontend</p>
-      <p>Javascript | jQuery | AJAX | Angular.js |  Backbone.js | HTML | CSS | SASS </p>
-      <p class="category">Backend</p>
-      <p>Ruby | Rails | Sinatra | Node.js | Express.js | Haml | SQL | PostgreSQL | ActiveRecord | MongoDB </p>
-      <p class="category">Other</p>
-      <p>Photoshop | Illustrator | Sketch | Matlab | Arduinos | 3D printing </p> -->
-    </div>
+    </div><!-- /contentContainer -->
   </section>
 
   <section id="projects" class="projects">
-    <h2 class="sectionHeading">Projects</h2>
-    <hr>
+    <div class="contentContainer">
+      <h2 class="sectionHeading">Projects</h2>
+      <hr>
 
-    <div class="project">
-      <article class="side sideLeft">
-        <div class="projectText">
-          <h3>Git Preview</h3>
-          <p>A way to track visual changes of a project on Github. PostgreSQL Rails app with SASS, using Omni-Auth, Github API, and image storage through AWS S3.</p>
-        </div>
-      </article>
-      <figure class="side sideRight">
-        <a target="_blank" href="https://git-preview.herokuapp.com/">
+      <div class="project">
+        <article class="side sideLeft">
+          <div class="projectText">
+            <h3>Git Preview</h3>
+            <p>A way to track visual changes Between Git Commits.</p>
+          </div>
+        </article>
+        <figure class="side sideRight effect-ruby">
           <img src="images/git_preview.png" alt="git preview screenshot">
-        </a>
-      </figure>
-    </div>
+          <figcaption>
+            <p>Learn More</p>
+            <a target="_blank" href="https://git-preview.herokuapp.com/"></a>
+          </figcaption>
+        </figure>
+      </div>
 
-    <div class="project">
-      <figure class="side sideLeft">
-        <a target="_blank" href="http://beacon-wdi.herokuapp.com/">
-          <img src="images/beacon.png" alt="beacon screenshotg">
-        </a>
-      </figure>
-      <article class="side sideRight">
-        <div class="projectText">
-          <h3>Beacon</h3>
-          <p>Connect with other travlers that share similar interests. An MongoDB Express.js app with SASS, authentication through passport.</p>
-        </div>
-      </article>
-    </div>
-
+      <div class="project">
+        <figure class="side sideLeft effect-ruby">
+          <img src="images/beacon.png" alt="beacon screenshot">
+          <figcaption>
+            <p>Learn More</p>
+            <a target="_blank" href="http://beacon-wdi.herokuapp.com/"></a>
+          </figcaption>
+        </figure>
+        <article class="side sideRight">
+          <div class="projectText">
+            <h3>Beacon</h3>
+            <p>Connect with other travlers that share similar interests.</p>
+          </div>
+        </article>
+      </div>
+    </div><!-- /contentContainer -->
   </section><!--end of project section-->
 
   <footer id="contact" class="contact">
@@ -147,4 +150,5 @@
   </footer>
 
 </body>
+
 </html>

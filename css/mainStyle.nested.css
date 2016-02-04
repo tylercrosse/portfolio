@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: 'Raleway', sans-serif; }
 
@@ -26,7 +29,10 @@ hr {
 .subSection {
   margin: 0 10vw; }
 
-@media screen and (max-width: 750px) {
+.contentContainer {
+  margin: 0 10%; }
+
+@media screen and (max-width: 768px) {
   h2 {
     font-size: 2.2em;
     padding: 8px; }
@@ -36,7 +42,9 @@ hr {
   p {
     font-size: 1em; }
   .subSection {
-    margin: 0 5%; } }
+    margin: 0 5%; }
+  .contentContainer {
+    margin: 0; } }
 
 .navbar-absolute {
   bottom: 0;
@@ -79,7 +87,7 @@ hr {
     color: black;
     font-size: 1.2em; }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .mainNav li {
     width: 70px; }
   .mainNav a {
@@ -132,7 +140,7 @@ hr {
   border-radius: 5px;
   height: 160px; }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .profile .subHeading {
     text-align: center; }
   .profilePic {
@@ -148,14 +156,14 @@ hr {
   padding: 40px 0 80px 0;
   background-color: #a4a4ac;
   background-color: rgba(164, 164, 172, 0.98); }
-  .skills .skillListContainer {
+  .skills .subSection {
     display: flex;
     justify-content: center; }
   .skills p {
     margin-top: 16px; }
   .skills .skillList {
     display: inline-block;
-    margin: 0 5%; }
+    margin: 0 8%; }
   .skills ul {
     list-style: none;
     display: inline; }
@@ -168,7 +176,7 @@ hr {
     text-align: center;
     clear: both; }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .skillList li {
     font-size: 1em; } }
 
@@ -188,14 +196,57 @@ hr {
     display: table;
     clear: both;
     content: ''; }
-  .project img {
-    max-width: 400px;
+  .project figure {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    max-width: 40vw;
     height: auto;
     border: 10px solid #ebebeb;
     border-radius: 5px; }
+    .project figure p {
+      display: inline-block;
+      padding: 0.8em;
+      border: 1px solid #fff;
+      transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
+      transform: translate3d(0, 20px, 0) scale(1.1);
+      opacity: 0; }
+    .project figure img {
+      position: relative;
+      display: block;
+      min-height: 100%;
+      max-width: 100%;
+      transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
+      opacity: 1; }
+    .project figure figcaption {
+      padding: 0.5em;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%; }
+    .project figure figcaption > a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1000;
+      text-indent: 200%;
+      white-space: nowrap;
+      font-size: 0;
+      opacity: 0; }
+    .project figure:hover p {
+      transform: translate3d(0, 0, 0) scale(1);
+      opacity: 1; }
+    .project figure:hover img {
+      opacity: 0.05; }
 
 .projectText {
   padding: 3em; }
+  .projectText h3 {
+    margin: 0; }
 
 .side {
   float: left;
@@ -209,35 +260,32 @@ hr {
 
 .sideRight {
   text-align: left; }
-  .sideRight img {
+  .sideRight figure {
     float: left; }
 
 .sideLeft {
   text-align: right; }
-  .sideLeft img {
+  .sideLeft figure {
     float: right; }
 
-@media screen and (max-width: 970px) {
-  .project h3 {
-    margin: 0; }
-  .side img {
-    max-width: 80%; } }
-
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .projectText {
     padding: 20px 2em; }
-  .project h3, .project p {
-    text-align: center;
-    margin-bottom: 0;
-    padding-top: 0; }
-  .side {
-    float: none;
-    width: 100%;
-    min-height: 4em; }
-    .side img {
+  .project {
+    display: block; }
+    .project h3, .project p {
+      text-align: center;
+      margin-bottom: 0;
+      padding-top: 0; }
+    .project figure {
       box-sizing: border-box;
       max-width: 90%;
-      margin: 0 5%; } }
+      margin: 0 5%; }
+  .side {
+    display: block;
+    float: none;
+    width: 100%;
+    min-height: 4em; } }
 
 footer {
   position: relative;
@@ -252,8 +300,7 @@ footer {
   display: inline-block;
   left: 50%;
   transform: translateX(-50%);
-  padding: 0;
-  margin: 60px 0; }
+  padding: 0; }
   .contactLinks li {
     display: inline-block;
     width: 80px;
