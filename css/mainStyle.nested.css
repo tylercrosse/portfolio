@@ -180,8 +180,10 @@ hr {
     clear: both; }
 
 @media screen and (max-width: 768px) {
-  .skillList li {
-    font-size: 1em; } }
+  .skills .skillList {
+    margin: 0 2%; }
+    .skills .skillList li {
+      font-size: 1em; } }
 
 .projects {
   position: relative;
@@ -321,3 +323,10 @@ footer {
 .contact p {
   margin: 100px 0;
   text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .contactLinks {
+    width: 100%;
+    text-align: center; }
+    .contactLinks li {
+      margin: 2%; } }

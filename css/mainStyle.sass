@@ -206,9 +206,11 @@ hr
     clear: both
 
 @media screen and (max-width: $mqTablet)
-  .skillList
-    li
-      font-size: 1em
+  .skills
+    .skillList
+      margin: 0 2%
+      li
+        font-size: 1em
 
 
 
@@ -357,3 +359,10 @@ footer
 .contact p
   margin: 100px 0
   text-align: center
+
+@media screen and (max-width: $mqTablet)
+  .contactLinks
+    width: 100%
+    text-align: center
+    li
+      margin: 2%
