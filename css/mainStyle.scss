@@ -1,5 +1,3 @@
-// /* GLOBAL
-//  *=================================================
 
 $navHighlight: red;
 $splashColor: rgb(235, 235, 235);
@@ -11,10 +9,10 @@ $color-5: rgb(47, 47, 50);
 
 $easeInOutQuart: cubic-bezier(0.77, 0, 0.175, 1);
 
-$mgLaptop: 1024px;
-$mqTablet: 768px;
-$mqPhoneL: 425px;
-$mqPhoneS: 320px;
+$L: 1024px;
+$M: 768px;
+$S: 425px;
+$XS: 320px;
 
 * {
   box-sizing: border-box;
@@ -60,7 +58,7 @@ hr {
   margin: 0 10%;
 }
 
-@media screen and (max-width: $mqTablet) {
+@media screen and (max-width: $M) {
   h2 {
     font-size: 2.2em;
     padding: 8px;
@@ -80,12 +78,13 @@ hr {
   }
 
   .contentContainer {
-    margin: 0;
+    margin: 0 5%;
   }
 }
 
-// /* NAV
-//  *=================================================
+// =========
+// NAV
+// =========
 
 .navbar-absolute {
   bottom: 0;
@@ -140,7 +139,7 @@ hr {
   }
 }
 
-@media screen and (max-width: $mqTablet) {
+@media screen and (max-width: $M) {
   .mainNav {
     li {
       width: 70px;
@@ -152,8 +151,9 @@ hr {
   }
 }
 
-// /* SPLASH
-//  *=================================================
+// =========
+// SPLASH
+// =========
 
 .splash {
   height: 100vh;
@@ -223,7 +223,7 @@ hr {
   height: 160px;
 }
 
-@media screen and (max-width: $mqTablet) {
+@media screen and (max-width: $M) {
   .profile {
     .subHeading {
       text-align: center;
@@ -240,8 +240,9 @@ hr {
   }
 }
 
-// /* SKILLS
-//  *=================================================
+// =========
+// SKILLS
+// =========
 
 .skills {
   position: relative;
@@ -283,7 +284,7 @@ hr {
   }
 }
 
-@media screen and (max-width: $mqTablet) {
+@media screen and (max-width: $M) {
   .skills {
     .skillList {
       margin: 0 2%;
@@ -295,8 +296,9 @@ hr {
   }
 }
 
-// /* PROJECTS
-//  *=================================================
+// =========
+// PROJECTS
+// =========
 
 .projects {
   position: relative;
@@ -328,7 +330,7 @@ hr {
     height: auto;
     border: 4px solid $splashColor;
     border-radius: 5px;
-    margin: 16px;
+    margin: 10px;
 
     p {
       display: inline-block;
@@ -393,7 +395,15 @@ hr {
 }
 
 
-@media screen and (max-width: $mqTablet) {
+@media screen and (max-width: $M) {
+  .project {
+    figure {
+      max-width: 40vw;
+    }
+  }
+}
+
+@media screen and (max-width: $S) {
   .projectText {
     padding: 20px 2em;
   }
@@ -410,13 +420,14 @@ hr {
     figure {
       box-sizing: border-box;
       max-width: 90%;
-      margin: 0 5%;
+      margin: 10px 5%;
     }
   }
 }
 
-// /* FOOTER
-//  *=================================================
+// =========
+// FOOTER
+// =========
 
 footer {
   position: relative;
@@ -458,7 +469,7 @@ footer {
   color: $color-4;
 }
 
-@media screen and (max-width: $mqTablet) {
+@media screen and (max-width: $M) {
   .contactLinks {
     width: 100%;
     text-align: center;
