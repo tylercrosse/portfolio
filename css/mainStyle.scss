@@ -311,10 +311,10 @@ hr {
 }
 
 .project {
+  display: inline-block;;
   position: relative;
-  margin-bottom: 10em;
 
-  &::before, &::after {
+  &::after {
     display: table;
     clear: both;
     content: "";
@@ -324,10 +324,11 @@ hr {
     position: relative;
     text-align: center;
     overflow: hidden;
-    max-width: 40vw;
+    max-width: 24vw;
     height: auto;
-    border: 10px solid $splashColor;
+    border: 4px solid $splashColor;
     border-radius: 5px;
+    margin: 16px;
 
     p {
       display: inline-block;
@@ -391,34 +392,6 @@ hr {
   }
 }
 
-.side {
-  float: left;
-  width: 50%;
-  min-height: 12em;
-  margin: 0;
-
-  &::before, &::after {
-    display: table;
-    clear: both;
-    content: "";
-  }
-}
-
-.sideRight {
-  text-align: left;
-
-  figure {
-    float: left;
-  }
-}
-
-.sideLeft {
-  text-align: right;
-
-  figure {
-    float: right;
-  }
-}
 
 @media screen and (max-width: $mqTablet) {
   .projectText {
@@ -439,13 +412,6 @@ hr {
       max-width: 90%;
       margin: 0 5%;
     }
-  }
-
-  .side {
-    display: block;
-    float: none;
-    width: 100%;
-    min-height: 4em;
   }
 }
 
