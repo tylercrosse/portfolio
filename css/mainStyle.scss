@@ -51,11 +51,17 @@ hr {
 }
 
 .subSection {
-  margin: 0 10vw;
+  margin-bottom: 60px;
+  
+  &:after {
+    display: table;
+    clear: both;
+    content: "";  
+  }
 }
 
 .contentContainer {
-  margin: 0 10%;
+  margin: 0 9%;
 }
 
 @media screen and (max-width: $M) {
@@ -74,7 +80,7 @@ hr {
   }
 
   .subSection {
-    margin: 0 5%;
+    margin: 0 5% 40px;
   }
 
   .contentContainer {
@@ -201,7 +207,7 @@ hr {
 
 .profile {
   position: relative;
-  padding: 40px 0 80px 0;
+  padding: 40px 0 0;
   background-color: $color-2;
   background-color: rgba($color-2, 0.95);
 
@@ -217,10 +223,10 @@ hr {
 .profilePic {
   float: left;
   display: inline-block;
-  margin: 20px 30px 200px 30px;
-  border: 10px solid $navBgColor;
+  margin: 20px 30px 40px 30px;
+  border: 4px solid $navBgColor;
   border-radius: 5px;
-  height: 160px;
+  height: 240px;
 }
 
 @media screen and (max-width: $M) {
@@ -316,7 +322,7 @@ hr {
   display: inline-block;;
   position: relative;
 
-  &::after {
+  &:after {
     display: table;
     clear: both;
     content: "";
