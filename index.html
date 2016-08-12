@@ -18,9 +18,9 @@
 <body>
   <nav class="mainNav navbar-absolute">
     <ul>
-      <li><a href="#profile">Profile</a></li>
-      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -35,10 +35,9 @@
     </div>
   </section>
 
-  <section id="profile" class="profile">
+  <section id="about" class="profile">
     <div class="contentContainer">
       <h2 class="sectionHeading">Profile</h2>
-      <hr>
       <div class="subSection">
         <img class="profilePic" src="images/Head_Shot_BW.jpg" alt="" />
         <h3 class="subHeading">About Me</h3>
@@ -46,105 +45,109 @@
           code, I'm on a bike, a mountain, an airplane, or buried in a good book.</p>
       </div>
     </div><!-- /contentContainer -->
-  </section>
 
-  <section id="skills" class="skills">
-    <div class="contentContainer">
-      <h2 class="sectionHeading">Skills</h2>
-      <hr>
-      <div class="subSection">
-        <div class="skillList">
-          <ul>
-            <strong><li>Front End</li></strong>
-            <li>Javascript</li>
-            <li>jQuery</li>
-            <li>AJAX</li>
-            <li>Angular.js</li>
-            <li>Backbone.js</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SASS</li>
-            <li>JSON</li>
-          </ul>
+    <section class="skills">
+      <div class="contentContainer">
+        <h2 class="sectionHeading">Skills</h2>
+        <div class="subSection">
+          <div class="skillList">
+            <ul>
+              <strong><li>Front End</li></strong>
+              <li>Javascript</li>
+              <li>ES6</li>
+              <li>React</li>
+              <li>Angular</li>
+              <li>jQuery</li>
+              <li>AJAX/JSON</li>
+              <li>HTML</li>
+              <li>SASS/CSS</li>
+              <li>Gulp</li>
+              <li>Webpack</li>
+            </ul>
+          </div>
+          <div class="skillList">
+            <ul>
+              <strong><li>Back End</li></strong>
+              <li>Node</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>Mongoose</li>
+              <li>Ruby</li>
+              <li>Rails</li>
+              <li>SQL</li>
+              <li>PostgreSQL</li>
+              <li>ActiveRecord</li>
+              <li>Nginx</li>
+              <li>Digital Ocean</li>
+              <li>AWS S3 &amp EC2</li>
+            </ul>
+          </div>
+          <div class="skillList">
+            <ul>
+              <strong><li>Other</li></strong>
+              <li>Git/Github</li>
+              <li>PhotoShop</li>
+              <li>Illustrator</li>
+              <li>Sketch</li>
+              <li>Arduinos</li>
+              <li>3D Printing</li>
+              <li>Linear Algebra</li>
+              <li>Python</li>
+              <li>Matlab</li>
+            </ul>
+          </div>
         </div>
-        <div class="skillList">
-          <ul>
-            <strong><li>Back End</li></strong>
-            <li>Ruby</li>
-            <li>Rails</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>SQL</li>
-            <li>PostgreSQL</li>
-            <li>ActiveRecord</li>
-            <li>MongoDB</li>
-            <li>Mongoose</li>
-          </ul>
-        </div>
-        <div class="skillList">
-          <ul>
-            <strong><li>Other</li></strong>
-            <li>Git/Github</li>
-            <li>AWS S3 &amp EC2</li>
-            <li>Bootstrap</li>
-            <li>PhotoShop</li>
-            <li>Illustrator</li>
-            <li>Sketch</li>
-            <li>Arduinos</li>
-            <li>3D Printing</li>
-            <li>Matlab</li>
-          </ul>
-        </div>
-      </div>
-    </div><!-- /contentContainer -->
+      </div><!-- /contentContainer -->
+    </section>
   </section>
 
   <section id="projects" class="projects">
     <div class="contentContainer">
       <h2 class="sectionHeading">Projects</h2>
-      <hr>
 
       <div class="project">
-        <article class="side sideLeft">
-          <div class="projectText">
-            <h3>Git Preview</h3>
-            <p>A way to track visual changes Between Git Commits.</p>
-          </div>
-        </article>
-        <figure class="side sideRight effect-ruby">
-          <img src="images/git_preview.png" alt="git preview screenshot">
+        <figure class="">
+          <img src="images/shortener.jpg" alt="git preview screenshot">
           <figcaption>
             <p>Learn More</p>
-            <a target="_blank" href="https://git-preview.herokuapp.com/"></a>
+            <a target="_blank" href="#"></a>
           </figcaption>
         </figure>
       </div>
 
       <div class="project">
-        <figure class="side sideLeft effect-ruby">
-          <img src="images/beacon.png" alt="beacon screenshot">
+        <figure class="">
+          <img src="images/garnet.jpg" alt="git preview screenshot">
+          <figcaption>
+            <p>Learn More</p>
+            <a target="_blank" href="https://garnet.wdidc.org/sign_in"></a>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="project">
+        <figure class="">
+          <img src="images/spacey.jpg" alt="git preview screenshot">
+          <figcaption>
+            <p>Learn More</p>
+            <a target="_blank" href="#"></a>
+          </figcaption>
+        </figure>
+      </div>
+      
+      <div class="project">
+        <figure class="">
+          <img src="images/beacon.jpg" alt="beacon screenshot">
           <figcaption>
             <p>Learn More</p>
             <a target="_blank" href="http://beacon-wdi.herokuapp.com/"></a>
           </figcaption>
         </figure>
-        <article class="side sideRight">
-          <div class="projectText">
-            <h3>Beacon</h3>
-            <p>Connect with other travlers that share similar interests.</p>
-          </div>
-        </article>
       </div>
 
       <div class="project">
-        <article class="side sideLeft">
-          <div class="projectText">
-            <h3>Atlas Shared</h3>
-            <p>Log and Share your travels with friends.</p>
-          </div>
-        </article>
-        <figure class="side sideRight effect-ruby">
-          <img src="images/atlas_shared.png" alt="git preview screenshot">
+        <figure class="">
+          <img src="images/atlas-shared.jpg" alt="git preview screenshot">
           <figcaption>
             <p>Learn More</p>
             <a target="_blank" href="http://atlasshared.com"></a>
@@ -152,18 +155,61 @@
         </figure>
       </div>
 
+      <div class="project">
+        <figure class="">
+          <img src="images/git-preview.jpg" alt="git preview screenshot">
+          <figcaption>
+            <p>Learn More</p>
+            <a target="_blank" href="https://git-preview.herokuapp.com/"></a>
+          </figcaption>
+        </figure>
+      </div>
+      
+      <div class="project">
+        <figure class="">
+          <img src="images/flash-cards.jpg" alt="git preview screenshot">
+          <figcaption>
+            <p>Learn More</p>
+            <a target="_blank" href="http://tylercrosse.com/Flash_Card_Project/"></a>
+          </figcaption>
+        </figure>
+      </div>
+      
+      <div class="project">
+        <figure class="">
+          <img src="images/scribble.jpg" alt="git preview screenshot">
+          <figcaption>
+            <p>Learn More</p>
+            <a target="_blank" href="http://scribble-tyler.herokuapp.com/"></a>
+          </figcaption>
+        </figure>
+      </div>
+
     </div><!-- /contentContainer -->
   </section><!--end of project section-->
 
+  <section id="resume" class="resume">
+    <h2 class="sectionHeading">Resume</h2>
+    <div class="resumes">
+      <div class="resumeDownload">
+        <p>PDF</p>
+        <a href="images/TylerCrosseResume.pdf" target="_blank"><img src="images/TylerCrosseResume.jpg" alt=""></a>
+      </div>
+      <div class="resumeDownload">
+        <p>TXT (Applicant Tracking)</p>
+        <a href="images/TylerCrossePlainResume.txt" target="_blank"><img src="images/TylerCrossePlainResume.jpg" alt=""></a>
+      </div>
+    </div>
+  </section>
+
   <footer id="contact" class="contact">
     <h2 class="sectionHeading">Contact</h2>
-    <hr>
     <ul class="contactLinks">
       <li><a target="_blank" href="https://www.linkedin.com/in/tylercrosse">LinkedIn</a></li>
       <li><a target="_blank" href="https://github.com/tylercrosse">GitHub</a></li>
       <li><a href="mailto:tylerscottcrosse@gmail.com?Subject=You're Hired!">Email</a></li>
     </ul>
-    <p>Copyright &copy; Tyler Crosse 2015. All Rights Reserved</p>
+    <p>Copyright &copy; Tyler Crosse 2016. All Rights Reserved</p>
   </footer>
 
 </body>
