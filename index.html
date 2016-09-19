@@ -1,241 +1,183 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tyler Crosse</title>
-  <link rel='icon' href='favicon.ico' type='image/x-icon' />
-  <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/mainStyle.min.css">
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/TweenMax.min.js"></script>
-  <script src="js/script.js"></script>
-  </script>
-</head>
-
-<body>
-  <nav class="mainNav navbar-absolute">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section id="splash" class="splash">
-    <div class="splashHero">
-      <img src="images/KV_WALLPAPER_2.jpg" alt="" />
-    </div>
-    <div class="intro">
-      <h1>Tyler Crosse</h1>
-      <h3>Web Developer</h3>
-    </div>
-  </section>
-
-  <section id="about" class="profile">
-    <div class="contentContainer">
-      <h2 class="sectionHeading">Profile</h2>
-      <h4>I'm currently looking for work in Seattle. Hire me!</h4>
-      <div class="subSection">
-        <img class="profilePic" src="images/Head_Shot_BW.jpg" alt="" />
-        <h3 class="subHeading">About Me</h3>
-        <p> I love learning, and teaching what I already know. I’m a resourceful web developer excited by building pragmatic features that enrich and streamline user experience. When I'm not attending hackathons or teaching other community members how to
-          code, I'm on a bike, a mountain, an airplane, or buried in a good book.</p>
-      </div>
-    </div><!-- /contentContainer -->
-
-    <section class="skills">
-      <div class="contentContainer">
-        <h2 class="sectionHeading">Skills</h2>
-        <div class="subSection">
-          <div class="skillList">
-            <ul>
-              <strong><li>Front End</li></strong>
-              <li>Javascript</li>
-              <li>ES6</li>
-              <li>React</li>
-              <li>Angular</li>
-              <li>jQuery</li>
-              <li>AJAX/JSON</li>
-              <li>HTML</li>
-              <li>SASS/CSS</li>
-              <li>Gulp</li>
-              <li>Webpack</li>
-            </ul>
-          </div>
-          <div class="skillList">
-            <ul>
-              <strong><li>Back End</li></strong>
-              <li>Node</li>
-              <li>Express</li>
-              <li>MongoDB</li>
-              <li>Mongoose</li>
-              <li>Ruby</li>
-              <li>Rails</li>
-              <li>SQL</li>
-              <li>PostgreSQL</li>
-              <li>ActiveRecord</li>
-              <li>Nginx</li>
-              <li>Digital Ocean</li>
-              <li>AWS S3 &amp EC2</li>
-            </ul>
-          </div>
-          <div class="skillList">
-            <ul>
-              <strong><li>Other</li></strong>
-              <li>Git/Github</li>
-              <li>PhotoShop</li>
-              <li>Illustrator</li>
-              <li>Sketch</li>
-              <li>Arduinos</li>
-              <li>3D Printing</li>
-              <li>Linear Algebra</li>
-              <li>Python</li>
-              <li>Matlab</li>
-            </ul>
-          </div>
-        </div>
-      </div><!-- /contentContainer -->
-    </section>
-  </section>
-
-  <section id="projects" class="projects">
-    <div class="contentContainer">
-      <h2 class="sectionHeading">Projects</h2>
-
-      <div class="project">
-        <figure class="">
-          <img src="images/shortener.jpg" alt="git preview screenshot">
-          <figcaption>
-            <p>Learn More</p>
-            <a class="modalTrigger" name="shortener" href=""></a>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="project">
-        <figure class="">
-          <img src="images/garnet.jpg" alt="git preview screenshot">
-          <figcaption>
-            <p>Learn More</p>
-            <a class="modalTrigger" name="garnet" href=""></a>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="project">
-        <figure class="">
-          <img src="images/spacey.jpg" alt="git preview screenshot">
-          <figcaption>
-            <p>Learn More</p>
-            <a class="modalTrigger" name="spacey" href=""></a>
-          </figcaption>
-        </figure>
-      </div>
-      
-      <div class="project">
-        <figure class="">
-          <img src="images/beacon.jpg" alt="beacon screenshot">
-          <figcaption>
-            <p>Learn More</p>
-            <a class="modalTrigger" name="beacon" href=""></a>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="project">
-        <figure class="">
-          <img src="images/atlas-shared.jpg" alt="git preview screenshot">
-          <figcaption>
-            <p>Learn More</p>
-            <a class="modalTrigger" name="atlasShared" href=""></a>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="project">
-        <figure class="">
-          <img src="images/git-preview.jpg" alt="git preview screenshot">
-          <figcaption>
-            <p>Learn More</p>
-            <a class="modalTrigger" name="gitPreview" href=""></a>
-          </figcaption>
-        </figure>
-      </div>
-      
-      <div class="project">
-        <figure class="">
-          <img src="images/flash-cards.jpg" alt="git preview screenshot">
-          <figcaption>
-            <p>Learn More</p>
-            <a class="modalTrigger" name="flashCards" href=""></a>
-          </figcaption>
-        </figure>
-      </div>
-      
-      <div class="project">
-        <figure class="">
-          <img src="images/scribble.jpg" alt="git preview screenshot">
-          <figcaption>
-            <p>Learn More</p>
-            <a class="modalTrigger" name="scribble" href=""></a>
-          </figcaption>
-        </figure>
-      </div>
-
-    </div><!-- /contentContainer -->
-  </section><!--end of project section-->
-
-  <section id="resume" class="resume">
-    <h2 class="sectionHeading">Resume</h2>
-    <div class="resumes">
-      <div class="resumeDownload">
-        <figure>
-          <img src="images/TylerCrosseResume.jpg" alt="">
-          <figcaption>
-            <p>Download</p>
-            <a href="images/TylerCrosseResume.pdf" target="_blank" download></a>
-          </figcaption>
-        </figure>
-        <p>.pdf</p>
-      </div>
-      <div class="resumeDownload">
-        <figure>
-          <img src="images/TylerCrossePlainResume.jpg" alt="">
-          <figcaption>
-            <p>Download</p>
-            <a href="iimages/TylerCrossePlainResume.txt" target="_blank" download></a>
-          </figcaption>
-        </figure>
-        <p>.txt (Applicant Tracking)</p>
-      </div>
-    </div>
-  </section>
-
-  <footer id="contact" class="contact">
-    <h2 class="sectionHeading">Contact</h2>
-    <ul class="contactLinks">
-      <li><a target="_blank" href="https://www.linkedin.com/in/tylercrosse">LinkedIn</a></li>
-      <li><a target="_blank" href="https://github.com/tylercrosse">GitHub</a></li>
-      <li><a href="mailto:tylerscottcrosse@gmail.com?Subject=You're Hired!">Email</a></li>
-    </ul>
-    <p>Copyright &copy; Tyler Crosse 2016. All Rights Reserved</p>
-  </footer>
-  
-  <section id="modal">
+---
+layout: default
+title: Home
+---
+<section id="about" class="profile">
+  <div class="contentContainer">
+    <h2 class="sectionHeading">Profile</h2>
+    <h4>I'm currently looking for work in Seattle. Hire me!</h4>
     <div class="subSection">
-      <div class="modalClose">x</div>
-      <img id="modalImage" src="" alt="">
-      <a id="modalLive" class="link" href="" target="_blank">Live</a>
-      <a id="modalGithub" class="link" href="" target="_blank">Github</a>
-      <p id="modalTech"></p>
-      <p id="modalDescription"></p>
+      <img class="profilePic" src="images/Head_Shot_BW.jpg" alt="" />
+      <h3 class="subHeading">About Me</h3>
+      <p> I love learning, and teaching what I already know. I’m a resourceful web developer excited by building pragmatic features that enrich and streamline user experience. When I'm not attending hackathons or teaching other community members how to
+        code, I'm on a bike, a mountain, an airplane, or buried in a good book.</p>
     </div>
+  </div><!-- /contentContainer -->
+
+  <section class="skills">
+    <div class="contentContainer">
+      <h2 class="sectionHeading">Skills</h2>
+      <div class="subSection">
+        <div class="skillList">
+          <ul>
+            <strong><li>Front End</li></strong>
+            <li>Javascript</li>
+            <li>ES6</li>
+            <li>React</li>
+            <li>Angular</li>
+            <li>jQuery</li>
+            <li>AJAX/JSON</li>
+            <li>HTML</li>
+            <li>SASS/CSS</li>
+            <li>Gulp</li>
+            <li>Webpack</li>
+          </ul>
+        </div>
+        <div class="skillList">
+          <ul>
+            <strong><li>Back End</li></strong>
+            <li>Node</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>Mongoose</li>
+            <li>Ruby</li>
+            <li>Rails</li>
+            <li>SQL</li>
+            <li>PostgreSQL</li>
+            <li>ActiveRecord</li>
+            <li>Nginx</li>
+            <li>Digital Ocean</li>
+            <li>AWS S3 &amp EC2</li>
+          </ul>
+        </div>
+        <div class="skillList">
+          <ul>
+            <strong><li>Other</li></strong>
+            <li>Git/Github</li>
+            <li>PhotoShop</li>
+            <li>Illustrator</li>
+            <li>Sketch</li>
+            <li>Arduinos</li>
+            <li>3D Printing</li>
+            <li>Linear Algebra</li>
+            <li>Python</li>
+            <li>Matlab</li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- /contentContainer -->
   </section>
+</section>
 
-</body>
+<section id="projects" class="projects">
+  <div class="contentContainer">
+    <h2 class="sectionHeading">Projects</h2>
 
-</html>
+    <div class="project">
+      <figure class="">
+        <img src="images/shortener.jpg" alt="git preview screenshot">
+        <figcaption>
+          <p>Learn More</p>
+          <a class="modalTrigger" name="shortener" href=""></a>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="project">
+      <figure class="">
+        <img src="images/garnet.jpg" alt="git preview screenshot">
+        <figcaption>
+          <p>Learn More</p>
+          <a class="modalTrigger" name="garnet" href=""></a>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="project">
+      <figure class="">
+        <img src="images/spacey.jpg" alt="git preview screenshot">
+        <figcaption>
+          <p>Learn More</p>
+          <a class="modalTrigger" name="spacey" href=""></a>
+        </figcaption>
+      </figure>
+    </div>
+    
+    <div class="project">
+      <figure class="">
+        <img src="images/beacon.jpg" alt="beacon screenshot">
+        <figcaption>
+          <p>Learn More</p>
+          <a class="modalTrigger" name="beacon" href=""></a>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="project">
+      <figure class="">
+        <img src="images/atlas-shared.jpg" alt="git preview screenshot">
+        <figcaption>
+          <p>Learn More</p>
+          <a class="modalTrigger" name="atlasShared" href=""></a>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="project">
+      <figure class="">
+        <img src="images/git-preview.jpg" alt="git preview screenshot">
+        <figcaption>
+          <p>Learn More</p>
+          <a class="modalTrigger" name="gitPreview" href=""></a>
+        </figcaption>
+      </figure>
+    </div>
+    
+    <div class="project">
+      <figure class="">
+        <img src="images/flash-cards.jpg" alt="git preview screenshot">
+        <figcaption>
+          <p>Learn More</p>
+          <a class="modalTrigger" name="flashCards" href=""></a>
+        </figcaption>
+      </figure>
+    </div>
+    
+    <div class="project">
+      <figure class="">
+        <img src="images/scribble.jpg" alt="git preview screenshot">
+        <figcaption>
+          <p>Learn More</p>
+          <a class="modalTrigger" name="scribble" href=""></a>
+        </figcaption>
+      </figure>
+    </div>
+
+  </div><!-- /contentContainer -->
+</section><!--end of project section-->
+
+<section id="resume" class="resume">
+  <h2 class="sectionHeading">Resume</h2>
+  <div class="resumes">
+    <div class="resumeDownload">
+      <figure>
+        <img src="images/TylerCrosseResume.jpg" alt="">
+        <figcaption>
+          <p>Download</p>
+          <a href="images/TylerCrosseResume.pdf" target="_blank" download></a>
+        </figcaption>
+      </figure>
+      <p>.pdf</p>
+    </div>
+    <div class="resumeDownload">
+      <figure>
+        <img src="images/TylerCrossePlainResume.jpg" alt="">
+        <figcaption>
+          <p>Download</p>
+          <a href="iimages/TylerCrossePlainResume.txt" target="_blank" download></a>
+        </figcaption>
+      </figure>
+      <p>.txt (Applicant Tracking)</p>
+    </div>
+  </div>
+</section>

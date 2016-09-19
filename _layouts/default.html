@@ -1,0 +1,67 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | Tyler Crosse</title>
+  <link rel='icon' href='favicon.ico' type='image/x-icon' />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/normalize.min.css">
+  <link rel="stylesheet" href="/css/mainStyle.min.css">
+  <script src="/js/jquery-2.1.4.min.js"></script>
+  <script src="/js/TweenMax.min.js"></script>
+  <script src="/js/script.js"></script>
+  </script>
+</head>
+
+<body>
+  <nav class="mainNav navbar-absolute">
+    <ul>
+      <li><a href="./index.html#about">About</a></li>
+      <li><a href="./index.html#projects">Projects</a></li>
+      <li><a href="./index.html#resume">Resume</a></li>
+      <li><a href="./blog.html">Writing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="splash" class="splash">
+    <div class="splashHero">
+      <img src="images/KV_WALLPAPER_2.jpg" alt="" />
+    </div>
+    <div class="intro">
+      <h1>Tyler Crosse</h1>
+      <h3>Web Developer</h3>
+    </div>
+  </section>
+
+  {{ content }}
+
+  <footer id="contact" class="contact">
+    <h2 class="sectionHeading">Contact</h2>
+    <ul class="contactLinks">
+      <li><a target="_blank" href="https://www.linkedin.com/in/tylercrosse">LinkedIn</a></li>
+      <li><a target="_blank" href="https://github.com/tylercrosse">GitHub</a></li>
+      <li><a href="mailto:tylerscottcrosse@gmail.com?Subject=You're Hired!">Email</a></li>
+    </ul>
+    <p>Copyright &copy; Tyler Crosse 2016. All Rights Reserved</p>
+  </footer>
+  
+  <section id="modal">
+    <div class="subSection">
+      <div class="modalClose">x</div>
+      <img id="modalImage" src="" alt="">
+      <a id="modalLive" class="link" href="" target="_blank">Live</a>
+      <a id="modalGithub" class="link" href="" target="_blank">Github</a>
+      <p id="modalTech"></p>
+      <p id="modalDescription"></p>
+    </div>
+  </section>
+
+</body>
+
+</html>
