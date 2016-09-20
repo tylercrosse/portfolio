@@ -112,6 +112,7 @@ hr {
   position: fixed;
   background-color: #fff;
   background-color: rgba($navBgColor, 0.98);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.3);
 }
 
 .nav-active {
@@ -546,6 +547,44 @@ hr {
       max-width: 90%;
       margin: 10px 5%;
     }
+  }
+}
+
+// =========
+// BLOG
+// =========
+
+.blog-container {
+  background-color: $splashColor;
+  padding: 40px 0 2%;
+  
+  .spacing {
+    margin: 0;
+  }
+  
+  h1 {
+    padding: 2% 2% 40px;
+    font-size: 3em;
+    text-align: center;
+  }
+  
+  h3, h4, p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.blog-post {
+  background-color: $navBgColor;
+  margin: 2% 15%;
+  padding: 2%;
+  
+  @media screen and (max-width: $L) {
+    margin: 2% 8%;
+  }
+  
+  @media screen and (max-width: $M) {
+    margin: 2% 2%;
   }
 }
 

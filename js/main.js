@@ -1,7 +1,15 @@
 $(function() {
   var navHeight = $('.mainNav').height();
+  var winHeight = $(window).height();
+  var secArr = [];
+  var scheduled = false;
 
   $('a[href*=\\#]:not([href=\\#])').click(animateJumpNav);
+  
+  $(window).scroll(function() {
+    winHeight = $(window).height();
+    throttle.call(this, scrollStuff, 15)
+  });
 
   function animateJumpNav() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -16,11 +24,6 @@ $(function() {
     }
   };
   
-  $(window).scroll(function() {
-    throttle.call(this, scrollStuff, 15)
-  });
-  
-  var scheduled = false;
   function throttle(cb, delay, cbArg1) {
     if (!scheduled) {
       scheduled = true;
@@ -30,12 +33,31 @@ $(function() {
       }, delay)
     }
   };
+  
+  function jumpLinks() {
+    var hrefs = $('a[href*=\\#]:not([href=\\#])').map(function() {
+      return $(this).attr('href');
+    }).get();
+    var ids = $('*[id]').map(function() {
+      return this.id;
+    }).get();
+    for (var i = 0; i < hrefs.length; i++) {
+      for (var j = 0; j < ids.length; j++) {
+        present = hrefs[i].match(ids[j])
+        if (present) {
+          var el = $('a[href="'+ hrefs[i] +'"]')
+          secArr.push(el);
+        }
+      }
+    }
+  }
     
   function scrollStuff() {
-    var scrollPos = $(window).scrollTop(); // get current vertical position
-    var winHeight = $(window).height(); // get window height
-    var docHeight = $(document).height(); // get doc height for last child
-
+    navFixer();
+    activeNav();
+  };
+  
+  function navFixer() {
     if ($(window).scrollTop() > (winHeight - navHeight)) {
       $('.mainNav').addClass('navbar-fixed');
       $('.mainNav').removeClass('navbar-absolute');
@@ -43,8 +65,35 @@ $(function() {
     if ($(window).scrollTop() < (winHeight - navHeight - 1)) {
       $('.mainNav').removeClass('navbar-fixed');
       $('.mainNav').addClass('navbar-absolute');
+    }    
+  }
+  
+  function activeNav() {
+    var scrollPos = $(window).scrollTop();
+    var docHeight = $(document).height();
+    for (var i = 0; i < secArr.length; i++) {
+      var q = secArr[i].attr('href').match(/#[a-z]+/i) // section
+      var secPos = $(q[0]).offset().top - navHeight - 1;
+      var secHeight = $(q[0]).height() + navHeight;
+      if (scrollPos > secPos && scrollPos < (secPos + secHeight)) {
+        secArr[i].addClass("nav-active");
+      } else {
+        secArr[i].removeClass("nav-active");
+      }
     }
-  };
+    var lastA = $('.mainNav li:last-child a');
+    if ((scrollPos + winHeight == docHeight) && (!lastA.hasClass('nav-active'))) {
+      $('.nav-active').removeClass('nav-active');
+      lastA.addClass('nav-active');
+    }
+  }
+  
+  // init
+  (function() {
+    jumpLinks();
+    navFixer();
+    activeNav()
+  })();
   
   $.fn.parallax = function ( resistance, mouse )
   {
@@ -56,17 +105,14 @@ $(function() {
   };
   
   $('#splash').mousemove(function(event){
-    throttle.call(this, splashParallax, 100, event);
+    throttle.call(this, splashParallax, 15, event);
   })
   
   function splashParallax(event) {
     $('.splashHero').parallax(-20, event);
     $('.intro').parallax(10, event);
   }
-    
-  // 3) parallax header every 15 ms
-    
-  // 4) project modal stuff
+
   $('.modalTrigger').click(openModal);
   
   $('.modalClose').click(closeModal);

@@ -51,7 +51,7 @@ $(document).ready(function() {
 
         // if at the bottom of the page make the last nav li active & others inactive
         if(scrollPos + winHeight == docHeight) {
-          if (!$("mainNav li:last-child a").hasClass("nav-active")) {
+          if (!$(".mainNav li:last-child a").hasClass("nav-active")) {
             var navActiveCurrent = $(".nav-active").attr("href");
             $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
             $("nav li:last-child a").addClass("nav-active");
@@ -85,14 +85,7 @@ $(document).ready(function() {
   });
 
   // jquery mouse parallax plugin https://github.com/giuseppesalvo/jquery-mouse-parallax
-  $.fn.parallax = function ( resistance, mouse )
-  {
-    $el = $( this );
-    TweenLite.to( $el, 0.2, {
-      x : -(( mouse.clientX - (window.innerWidth/2) ) / resistance ),
-      y : -(( mouse.clientY - (window.innerHeight/2) ) / resistance )
-    });
-  };
+
   
   $('.modalTrigger').click(openModal);
   
