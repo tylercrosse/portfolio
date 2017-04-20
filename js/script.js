@@ -93,13 +93,20 @@ $(document).ready(function() {
       y : -(( mouse.clientY - (window.innerHeight/2) ) / resistance )
     });
   };
-  
+
   $('.modalTrigger').click(openModal);
-  
+
   $('.modalClose').click(closeModal);
-  
+
+  $(document).keyup(function(e) {
+    var KEYCODE_ESC = 27;
+    if (e.keyCode === KEYCODE_ESC && modOpen) closeModal();
+  });
+
+  // modal state
+  var modOpen = false;
   var modScrollPos = 0;
-  
+
   function openModal() {
     event.preventDefault();
     var project = projects[$(this).attr('name')];
@@ -110,16 +117,25 @@ $(document).ready(function() {
     $('#modalLive').attr('href', project.liveUrl)
     $('#modalGithub').attr('href', project.githubUrl)
     $('#modal').show();
+    modOpen = true;
   }
-  
+
   function closeModal() {
     event.preventDefault();
     $(window).scrollTop(modScrollPos);
     $('#modal').hide();
+    modOpen = true;
   }
 });
 
 var projects = {
+  gitterClone: {
+    imageUrl: 'images/gitter-clone.gif',
+    techUsed: 'React, Redux, Webpack, Express, SASS, MongoDB, Jest, SemaPhoreCI, DigitalOcean',
+    description: 'This is universal app was built as portfolio piece representing a subset of the features of Troupe Technology\'s wonderful chat app, Gitter. Check out the github repo to learn more!',
+    liveUrl: 'https://gitter-clone.tk',
+    githubUrl: 'https://github.com/tylercrosse/gitter-clone'
+  },
   shortener: {
     imageUrl: 'images/shortener.jpg',
     techUsed: 'React, ES6, Express, SASS, MongoDB, DigitalOcean',

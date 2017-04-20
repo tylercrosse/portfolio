@@ -53,11 +53,11 @@ hr {
 
 .subSection {
   margin-bottom: 60px;
-  
+
   &:after {
     display: table;
     clear: both;
-    content: "";  
+    content: "";
   }
 }
 
@@ -218,11 +218,11 @@ hr {
   padding: 40px 0 0;
   background-color: $color-2;
   background-color: rgba($color-2, 0.95);
-  
+
   h2 {
     margin-bottom: 16px;
   }
-  
+
   h4 {
     text-align: center;
     font-size: 1.4em;
@@ -328,18 +328,18 @@ hr {
   padding: 40px 0 80px 0;
   background-color: $color-6;
   color: $splashColor;
-  
+
   .resumes {
     display: flex;
     justify-content: center;
   }
-  
+
   .resumeDownload {
     p {
       text-align: center;
     }
   }
-  
+
   figure {
     position: relative;
     text-align: center;
@@ -402,24 +402,24 @@ hr {
       }
     }
   }
-  
+
   @media screen and (max-width: $M) {
     figure {
       width: 36vw;
       height: 48vw;
     }
   }
-  
+
   @media screen and (max-width: $S) {
     figure {
       width: 48vw;
       height: 64vw;
     }
-    
+
     .resumes {
       flex-direction: column;
       align-items: center;
-    }  
+    }
   }
 }
 
@@ -433,6 +433,8 @@ hr {
   padding: 40px 0 80px 0;
   background-color: $color-4;
   color: $splashColor;
+  display: flex;
+  justify-content: center;
 }
 
 .project {
@@ -449,7 +451,7 @@ hr {
     position: relative;
     text-align: center;
     overflow: hidden;
-    max-width: 24vw;
+    max-width: 40vw;
     height: auto;
     border: 4px solid $splashColor;
     border-radius: 5px;
@@ -616,7 +618,7 @@ footer {
   z-index: 1000;
   background-color: $color-4;
   color: $splashColor;
-  
+
   a {
     display: inline-block;
     padding: 0.8em;
@@ -626,10 +628,10 @@ footer {
     width: 100px;
     margin: 2em 1em 0;
   }
-  
+
   .subSection {
     // margin: 0 1em;
-    
+
     img {
       max-width: 95%;
       display: block;
@@ -639,19 +641,19 @@ footer {
       border-radius: 5px;
     }
   }
-  
+
   .modalClose {
     cursor: pointer;
     font-size: 2em;
     padding: 1em;
   }
-  
+
   @media screen and (min-width: $M) {
     .subSection {
       margin: 0 10% 60px;
     }
   }
-  
+
   @media screen and (max-width: $M) {
     .subSection {
       margin: 0 5% 40px;
