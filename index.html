@@ -27,7 +27,11 @@
 
   <section id="splash" class="splash">
     <div class="splashHero">
-      <img src="images/KV_WALLPAPER_2.webp" alt="" />
+      <picture>
+        <source srcset="images/KV_WALLPAPER_2.webp" type="image/webp" />
+        <source srcset="images/KV_WALLPAPER_2.jpg" type="image/jpg" />
+        <img src="images/KV_WALLPAPER_2.jpg" alt="" />
+      </picture>
     </div>
     <div class="intro">
       <h1>Tyler Crosse</h1>
@@ -40,7 +44,11 @@
       <h2 class="sectionHeading">Profile</h2>
       <h4>I'm currently looking for work in Seattle. Hire me!</h4>
       <div class="subSection">
-        <img class="profilePic" src="images/Head_Shot_BW.webp" alt="" />
+        <picture>
+          <source srcset="images/Head_Shot_BW.webp" type="image/webp">
+          <source srcset="images/Head_Shot_BW.jpg" type="image/jpg">
+          <img class="profilePic" src="images/Head_Shot_BW.jpg" alt="" />
+        </picture>
         <h3 class="subHeading">About Me</h3>
         <p>I love learning, and teaching what I already know. I’m a resourceful software developer excited by building pragmatic features that enrich and streamline user experience. When I'm not attending hackathons or teaching other community members how to code, I'm on a bike, a mountain, an airplane, or buried in a good book.</p>
       </div>
@@ -111,10 +119,84 @@
 
       <div class="project">
         <figure class="">
-          <img src="images/gitter-clone.webp" alt="gitter-clone screenshot">
+          <picture>
+            <source srcset="images/gitter-clone.webp" type="image/webp" />
+            <source srcset="images/gitter-clone.jpg" type="image/jpg" />
+            <img src="images/gitter-clone.jpg" alt="gitter-clone screenshot">
+          </picture>
           <figcaption>
             <p>Learn More</p>
             <a class="modalTrigger" name="gitterClone" href=""></a>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="project">
+        <figure class="">
+          <picture>
+            <source srcset="images/garnet.webp" type="image/webp" />
+            <source srcset="images/garnet.jpg" type="image/jpg" />
+            <img src="images/garnet.jpg" alt="garnet screenshot">
+          </picture>
+          <figcaption>
+            <p>Learn More</p>
+            <a class="modalTrigger" name="garnet" href=""></a>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="project">
+        <figure class="">
+          <picture>
+            <source srcset="images/beacon.webp" type="image/webp" />
+            <source srcset="images/beacon.jpg" type="image/jpg" />
+            <img src="images/beacon.jpg" alt="beacon screenshot">
+          </picture>
+          <figcaption>
+            <p>Learn More</p>
+            <a class="modalTrigger" name="beacon" href=""></a>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="project">
+        <figure class="">
+          <picture>
+            <source srcset="images/atlas-shared.webp" type="image/webp" />
+            <source srcset="images/atlas-shared.jpg" type="image/jpg" />
+            <img src="images/atlas-shared.jpg" alt="atlas-shared screenshot">
+          </picture>
+          <figcaption>
+            <p>Learn More</p>
+            <a class="modalTrigger" name="atlasShared" href=""></a>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="project">
+        <figure class="">
+          <picture>
+            <source srcset="images/flash-cards.webp" type="image/webp" />
+            <source srcset="images/flash-cards.jpg" type="image/jpg" />
+            <img src="images/flash-cards.jpg" alt="flash-cards screenshot">
+          </picture>
+          <figcaption>
+            <p>Learn More</p>
+            <a class="modalTrigger" name="flashCards" href=""></a>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="project">
+        <figure class="">
+          <picture>
+            <source srcset="images/scribble.webp" type="image/webp" />
+            <source srcset="images/scribble.jpg" type="image/jpg" />
+            <img src="images/scribble.jpg" alt="scribble screenshot">
+          </picture>
+          <figcaption>
+            <p>Learn More</p>
+            <a class="modalTrigger" name="scribble" href=""></a>
           </figcaption>
         </figure>
       </div>
@@ -127,7 +209,11 @@
     <div class="resumes">
       <div class="resumeDownload">
         <figure>
-          <img src="images/ResumePDFScreenshot.webp" alt="">
+          <picture>
+            <source srcset="images/ResumePDFScreenshot.webp" type="image/webp" />
+            <source srcset="images/ResumePDFScreenshot.jpg" type="image/jpg" />
+            <img src="images/ResumePDFScreenshot.jpg" alt="ResumePDFScreenshot">
+          </picture>
           <figcaption>
             <p>Download</p>
             <a href="images/TylerCrosseResume.pdf" target="_blank" download></a>
@@ -137,10 +223,14 @@
       </div>
       <div class="resumeDownload">
         <figure>
-          <img src="images/ResumeTXTScreenshot.webp" alt="">
+          <picture>
+            <source srcset="images/ResumeTXTScreenshot.webp" type="image/webp" />
+            <source srcset="images/ResumeTXTScreenshot.jpg" type="image/jpg" />
+            <img src="images/ResumeTXTScreenshot.jpg" alt="ResumeTXTScreenshot">
+          </picture>
           <figcaption>
             <p>Download</p>
-            <a href="images/TylerCrossePlainResume.txt" target="_blank" download></a>
+            <a href="images/TylerCrosseResume.txt" target="_blank" download></a>
           </figcaption>
         </figure>
         <p>.txt (Applicant Tracking)</p>
@@ -161,7 +251,11 @@
   <section id="modal">
     <div class="subSection">
       <div class="modalClose">x</div>
-      <img id="modalImage" src="" alt="">
+      <picture>
+        <source id="modalWebpSrc" srcset="" type="image/webp" />
+        <source id="modalJpgSrc" srcset="" type="image/jpg" />
+        <img id="modalImage" src="" alt="">
+      </picture>
       <a id="modalLive" class="link" href="" target="_blank">Live</a>
       <a id="modalGithub" class="link" href="" target="_blank">Github</a>
       <p id="modalTech"></p>
