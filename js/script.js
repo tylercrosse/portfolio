@@ -136,9 +136,17 @@ var projects = {
     imageUrl: 'images/gitter-clone.gif',
     imageFallbackUrl: 'images/gitter-clone.gif',
     techUsed: 'React, Redux, Webpack, Express, SASS, MongoDB, Jest, SemaPhoreCI, DigitalOcean',
-    description: 'This is universal app was built as portfolio piece representing a subset of the features of Troupe Technology\'s wonderful chat app, Gitter. Check out the github repo to learn more!',
+    description: 'This universal app was built as portfolio piece representing a subset of the features of Troupe Technology\'s wonderful chat app, Gitter. Check out the github repo to learn more!',
     liveUrl: 'https://gitter-clone.tk',
     githubUrl: 'https://github.com/tylercrosse/gitter-clone'
+  },
+  weatherApp: {
+    imageUrl: 'images/weather-app.jpg',
+    imageFallbackUrl: 'images/weather-app.jpg',
+    techUsed: 'React, Redux, Webpack, Express, d3, Jest',
+    description: 'This weather app was built in my spare time over a week as part of coding challenge. Check out the github repo to learn more!',
+    liveUrl: 'https://weather-app-avftevexwx.now.sh/',
+    githubUrl: 'https://github.com/tylercrosse/weather-app'
   },
   shortener: {
     imageUrl: 'images/shortener.webp',
