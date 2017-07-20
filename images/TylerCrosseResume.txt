@@ -1,1 +1,42 @@
-Tyler Crosse703 966 5788 | tylerscottcrosse@gmail.com | tylercrosse.comSKILLSFront EndJavascript | React | Redux | D3 | Meteor | Angular | SASS | CSS | HTML | jQuery | Bootstrap | Gulp | Webpack | Mocha/Chai | JestBack EndNode | Express | Ruby | Rails | Sinatra | SQL | PostgreSQL | ActiveRecord | Sequelize | MongoDB | Mongoose | Continuous Integration/Deployment | SSH | AWS S3 & EC2 | Digital OceanOtherC | Test-Driven Dev. | MVC Pattern | Version Control | Git/Github | Agile Development | Scrum | API Integration | Responsive Design | Photoshop | Illustrator | Sketch | Arduinos | 3D Printing | MatlabEXPERIENCE? Software Developer | restack | Seattle WA | Apr 2017 – nowBuilt core features for chat & admin application using React + Redux, & Node/Express.js. Managed small team of developers and provided mentorship to a junior developer.? Software Developer | Freelance | Seattle WA | Aug 2016 – nowBuilt dynamic single page web applications using modern web frameworks with a variety of technologies including: React + Redux, Angular, Ruby on Rails, & Node/Express.js.       ? Gitter | Seattle WA | Mar 2017Created and deployed chat application using SSR, React + Redux, Node/Express.js, PostgreSQL, CircleCI, & with >95% test coverage.                  ? Goin’ | Seattle WA | Oct 2016 – Feb 2017Built features for a large MeteorJS Application and converted existing views into React. Focused on delivering clean, maintainable, testable code in a quick timeframe.? Instructor | General Assembly | Washington DC | Feb 2016 – Jul 2016Taught material on common best practices in object-oriented programming. MVC frameworks, data modeling, and test-driven development. Created original content on new topics including ES6, Webpack, and React. Developed features and tests for internal tools.? Web Designer | Freelance | Richmond VA | Mar 2015 – Sep 2015Created wireframes and production assets using Sketch, Photoshop & Illustrator. Transformed wireframes into responsive interactive websites using HTML, CSS & jQuery.VOLUNTEER? Ada Developer Academy | Seattle WA | 2016 - nowLed a weekly tutoring session for web development immersive students looking to gain extra instruction in Ruby & Javascript.EDUCATION? Web Development Student | General Assembly | Washington DC | Oct 2015 – Jan 2016Immersive full-stack development course covering Ruby, Rails, Sinatra, Javascript, Express, Angular, jQuery, PostgreSQL, and MongoDB. ? B.S. Biomedical Engineering | Virginia Commonwealth University | Richmond VA | 2014Courses included: Differential Equations, Linear Algebra, Multivariate Calc, Applied Statistics, Electric Circuits I-III, Computational Methods I&II, Signal Processing, & Engineering Design.
+Tyler Crosse
+703 966 5788 | tylerscottcrosse@gmail.com | tylercrosse.com
+Animal lover | Rock climber | Thinker | Cyclist | Bookworm | Marathoner | Artist | Environmentalist 
+
+SKILLS
+? Front-End: 	Javascript | React | Redux | Angular | D3 | SASS | CSS | HTML | jQuery | Bootstrap
+? Back-End:	Node | Express | Meteor | Ruby | Rails | Sinatra | Python | Django | C
+? Database: 	SQL | PostgreSQL | ActiveRecord | Sequelize | MongoDB | Mongoose
+? DevOps: 	Docker | Continuous Integration/Deployment | SSH | AWS S3 & EC2 | Digital Ocean
+? Test/Build:	Jest | Nightmare | Mocha/Chai/Istanbul | Selenium | Gulp | Webpack | Shell
+? Paradigms: 	Object Oriented | REST APIs | MVC | Version Control – Git/Github | Algorithm Design
+? Processes: 	Test Driven Dev. | Agile | Scrum | Responsive Design | A/B testing
+? Other:	Photoshop | Illustrator | Sketch | Arduinos | 3D Printing | Linux | Matlab
+
+EXPERIENCE
+? Full-stack Developer | restack | Seattle WA | Apr 2017 – now
+Built core features for a chat & admin application using React + Redux, & Node/Express.js. Managed a small team of developers and provided mentorship to a junior developer.
+
+? Full-stack Developer | Freelance | Seattle WA | Aug 2016 – now
+Built dynamic single page web applications using modern web frameworks with a variety of technologies including React + Redux, Angular, Ruby on Rails, & Node/Express.js.
+       ? Gitter | Seattle WA | Mar 2017
+Created and deployed chat application with rich client side UI using SSR, React + Redux, Node/Express.js, PostgreSQL, CircleCI, >97% test coverage.
+           
+       ? Goin’ | Seattle WA | Oct 2016 – Feb 2017
+Built features for a large engaging MeteorJS Application and converted existing views into React. Focused on delivering clean, maintainable, testable code in a quick timeframe.
+
+? Instructor | General Assembly | Washington DC | Feb 2016 – Jul 2016
+Taught material on common best practices in object-oriented programming. MVC frameworks, data modeling, and test-driven development. Created original content on new topics including ES6, Webpack, and React. Developed features and tests for internal tools.
+
+? Web Designer | Freelance | Richmond VA | Mar 2015 – Sep 2015
+Created wireframes and production assets using Sketch, Photoshop & Illustrator. Transformed wireframes into responsive interactive websites using HTML, CSS & jQuery.
+
+VOLUNTEER
+? Ada Developer Academy | Seattle WA | 2016 - now
+Led a weekly tutoring session for web development immersive students looking to gain extra instruction in Ruby & Javascript.
+
+EDUCATION
+? Web Development Student | General Assembly | Washington DC | Oct 2015 – Jan 2016
+Immersive full-stack development course covering Ruby, Rails, Sinatra, Javascript, Express, Angular, jQuery, PostgreSQL, and MongoDB. 
+
+? B.S. Biomedical Engineering | Virginia Commonwealth University | Richmond VA | 2014
+Courses included: Differential Equations, Linear Algebra, Multivariate Calc, Applied Statistics, Electric Circuits I-III, Computational Methods I&II, Signal Processing, & Engineering Design.
