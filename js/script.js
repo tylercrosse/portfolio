@@ -145,7 +145,7 @@ var projects = {
     imageFallbackUrl: 'images/weather-app.jpg',
     techUsed: 'React, Redux, Webpack, Express, d3, Jest',
     description: 'This weather app was built in my spare time over a week as part of coding challenge. Check out the github repo to learn more!',
-    liveUrl: 'https://weather-app-avftevexwx.now.sh/',
+    liveUrl: 'https://forecast.tk/',
     githubUrl: 'https://github.com/tylercrosse/weather-app'
   },
   shortener: {
